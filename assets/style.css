@@ -1,0 +1,132 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --accent: #1d4ed8;
+  --border: #e2e2e2;
+  --bg: #ffffff;
+  --max-width: 760px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 32px 0;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #f0f0f0;
+}
+
+.header-text h1 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+.tagline {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+.links a {
+  margin-right: 14px;
+  font-size: 0.95rem;
+}
+
+main {
+  padding: 40px 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+.keywords {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.keywords li {
+  background: #f2f4f8;
+  color: var(--muted);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.pub-list {
+  padding-left: 1.2em;
+}
+.pub-list li {
+  margin-bottom: 14px;
+}
+.pub-title {
+  display: block;
+  font-weight: 600;
+}
+.pub-authors, .pub-venue {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contact-list li {
+  margin-bottom: 6px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 0 40px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .site-header .wrap { flex-direction: column; text-align: center; }
+  .links a { margin: 0 7px; }
+}
