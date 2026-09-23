@@ -1,6 +1,6 @@
 # eduardojsbarroso.github.io
 
-Personal academic homepage for Eduardo Jose Barroso (cosmologist, LAPP, Annecy, France).
+Personal academic homepage for Eduardo José Barroso (cosmologist, LAPP, Annecy, France).
 Plain HTML/CSS, no build step, hosted on GitHub Pages.
 
 ## Structure
@@ -40,7 +40,7 @@ Already in place: `assets/photo.jpg`, `assets/CV.pdf`,
 ## Why this helps you show up when people Google your name
 
 - The `<title>`, headings, and body text all repeat your full name
-  ("Eduardo Jose Barroso"), which is what search engines match against.
+  ("Eduardo José Barroso"), which is what search engines match against.
 - The embedded JSON-LD (`Person` schema) tells Google explicitly "this
   page is about a person named X, affiliated with LAPP, and here are
   their other profiles" via `sameAs`.
