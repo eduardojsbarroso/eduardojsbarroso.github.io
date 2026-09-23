@@ -268,6 +268,32 @@ main.page code {
   text-align: center;
 }
 
+.figure-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0 30px;
+  flex-wrap: wrap;
+}
+.figure-row-img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  flex-shrink: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px;
+}
+.figure-row-text {
+  flex: 1;
+  min-width: 240px;
+}
+.figure-row-text p {
+  margin: 0;
+}
+
 /* Buttons / link chips */
 .btn {
   display: inline-flex;
