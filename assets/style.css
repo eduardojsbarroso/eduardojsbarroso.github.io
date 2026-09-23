@@ -252,14 +252,14 @@ main.page code {
   margin: 24px 0 30px;
   padding: 0;
 }
-.pipeline-diagram {
+.pipeline-figure img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 8px 0;
+  padding: 14px;
 }
 .pipeline-figure figcaption {
   margin-top: 8px;
