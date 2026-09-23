@@ -12,7 +12,7 @@ linking to its own page:
 - `research.html` — research interests
 - `publications.html` — papers and preprints
 - `cv.html` — CV download, plus PhD and Master's thesis downloads
-- `profiles.html` — INSPIRE-HEP, ORCID, Google Scholar, GitHub, LinkedIn
+- `profiles.html` — INSPIRE-HEP, ORCID, Google Scholar, GitHub, Lattes
 - `contact.html` — email and address
 
 Every page shares `assets/style.css` and a consistent top nav bar so you can
@@ -28,14 +28,14 @@ jump between sections from anywhere, not just the home page.
 
 ## Personalize the content
 
-Bio, research, publications, CV, positions, and contact are filled in with
-real content already. One thing still needs `REPLACE`d:
+Bio, research, publications, CV, positions, profiles, and contact are all
+filled in with real content, including `assets/photo.jpg`, `assets/CV.pdf`,
+`assets/thesis-phd.pdf`, and `assets/thesis-msc.pdf`.
 
-- **Google Scholar link** and **LinkedIn** (optional) — in `index.html`
-  (JSON-LD `sameAs`), `publications.html`, and `profiles.html`.
-
-Already in place: `assets/photo.jpg`, `assets/CV.pdf`,
-`assets/thesis-phd.pdf`, `assets/thesis-msc.pdf`.
+Note: the Lattes link uses the stable `?id=` URL rather than the
+captcha-token URL Lattes shows after a search (that token is single-use and
+expires) — visitors may need to solve a captcha on Lattes' own site, which
+is normal behavior for that platform.
 
 ## Why this helps you show up when people Google your name
 
