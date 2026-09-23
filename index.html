@@ -6,28 +6,28 @@
 
 <!-- ============================================================
      QUICK EDIT GUIDE
-     Search for "REPLACE:" to find every placeholder you should
-     personalize before/after publishing this page.
+     Search for "REPLACE:" across all .html files to find every
+     placeholder that needs your real text/links.
      ============================================================ -->
 
 <title>Eduardo Jose Barroso — Cosmologist, LAPP Annecy</title>
-<meta name="description" content="Eduardo Jose Barroso is a cosmologist at LAPP (Laboratoire d'Annecy de Physique des Particules), Annecy, France. Research, publications, and contact information.">
+<meta name="description" content="Eduardo Jose Barroso is a cosmologist at LAPP (Laboratoire d'Annecy de Physique des Particules), Annecy, France. Research, publications, CV and contact information.">
 <meta name="author" content="Eduardo Jose Barroso">
 <link rel="canonical" href="https://eduardojsbarroso.github.io/">
 
-<!-- Open Graph / social preview -->
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Eduardo Jose Barroso — Cosmologist, LAPP Annecy">
 <meta property="og:description" content="Cosmologist at LAPP (Laboratoire d'Annecy de Physique des Particules), Annecy, France.">
 <meta property="og:url" content="https://eduardojsbarroso.github.io/">
 <meta property="og:image" content="https://eduardojsbarroso.github.io/assets/photo.jpg">
 
-<!-- Favicon: simple emoji, no image file needed -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 
-<!-- Structured data so Google understands this page is about a person -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,7 +48,7 @@
     "REPLACE: https://inspirehep.net/authors/YOUR_ID",
     "REPLACE: https://orcid.org/YOUR-ORCID-ID",
     "REPLACE: https://scholar.google.com/citations?user=YOUR_ID",
-    "REPLACE: https://github.com/eduardojsbarroso",
+    "https://github.com/eduardojsbarroso",
     "REPLACE: https://www.linkedin.com/in/your-linkedin"
   ]
 }
@@ -56,108 +56,70 @@
 </head>
 <body>
 
-<header class="site-header">
+<section class="hero">
   <div class="wrap">
     <img class="avatar" src="assets/photo.jpg" alt="Photo of Eduardo Jose Barroso" onerror="this.src='assets/avatar-placeholder.svg'">
-    <div class="header-text">
-      <h1>Eduardo Jose Barroso</h1>
-      <p class="tagline">Cosmologist · LAPP, Annecy, France</p>
-      <nav class="links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <h1>Eduardo Jose Barroso</h1>
+    <p class="tagline">Cosmologist · LAPP, Annecy, France</p>
+    <!-- REPLACE: one or two sentences, this is the very first thing visitors read -->
+    <p class="intro">
+      I study the universe at its largest scales — from theory and simulations to
+      data analysis in observational cosmology. <em>REPLACE: adjust this one-liner
+      to describe what you actually work on.</em>
+    </p>
   </div>
-</header>
+</section>
 
 <main class="wrap">
+  <div class="card-grid">
 
-  <section id="about">
-    <h2>About</h2>
-    <!-- REPLACE: write 3-5 sentences in your own voice. Keep your full name
-         "Eduardo Jose Barroso" somewhere in this paragraph — it helps search
-         engines associate this page with your name. -->
-    <p>
-      I am a cosmologist at LAPP (Laboratoire d'Annecy de Physique des Particules) in Annecy, France.
-      My work sits at the intersection of theory, simulations, and data analysis in observational cosmology.
-      <em>REPLACE: add a sentence or two about your academic background — PhD, previous institutions, current position/title.</em>
-    </p>
-  </section>
+    <a class="card" href="about.html">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1.2-4 4.2-6 7-6s5.8 2 7 6"/></svg>
+      <h2>About</h2>
+      <p>Background and who I am</p>
+    </a>
 
-  <section id="research">
-    <h2>Research</h2>
-    <!-- REPLACE: describe your research interests concretely. Examples below —
-         swap in your actual topics, surveys/experiments, and methods. -->
-    <p>
-      My research focuses on <em>REPLACE: e.g. dark energy, large-scale structure, weak gravitational lensing,
-      neutrino cosmology, CMB analysis</em>, using data from <em>REPLACE: e.g. DESI, Euclid, LSST/Rubin, Planck</em>.
-      I am interested in <em>REPLACE: 1-2 sentences on what specific questions/methods drive your work.</em>
-    </p>
-    <ul class="keywords">
-      <li>REPLACE: keyword</li>
-      <li>REPLACE: keyword</li>
-      <li>REPLACE: keyword</li>
-    </ul>
-  </section>
+    <a class="card" href="research.html">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(-25 12 12)"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="20" cy="8" r="1" fill="currentColor" stroke="none"/></svg>
+      <h2>Research</h2>
+      <p>What I work on and why</p>
+    </a>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <p>Full list on <a href="REPLACE: https://inspirehep.net/authors/YOUR_ID" target="_blank" rel="noopener">INSPIRE-HEP</a>
-       and <a href="REPLACE: https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>.</p>
-    <ol class="pub-list">
-      <li>
-        <span class="pub-title">REPLACE: Paper title</span>
-        <span class="pub-authors">Author list</span>
-        <span class="pub-venue">Journal/arXiv, Year</span>
-        — <a href="REPLACE: link to arXiv/journal">link</a>
-      </li>
-      <li>
-        <span class="pub-title">REPLACE: Paper title</span>
-        <span class="pub-authors">Author list</span>
-        <span class="pub-venue">Journal/arXiv, Year</span>
-        — <a href="REPLACE: link to arXiv/journal">link</a>
-      </li>
-      <li>
-        <span class="pub-title">REPLACE: Paper title</span>
-        <span class="pub-authors">Author list</span>
-        <span class="pub-venue">Journal/arXiv, Year</span>
-        — <a href="REPLACE: link to arXiv/journal">link</a>
-      </li>
-    </ol>
-  </section>
+    <a class="card" href="publications.html">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3.5" width="14" height="17" rx="1.6"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="11.5" x2="16" y2="11.5"/><line x1="8" y1="15" x2="13" y2="15"/></svg>
+      <h2>Publications</h2>
+      <p>Papers and preprints</p>
+    </a>
 
-  <section id="cv">
-    <h2>CV</h2>
-    <!-- REPLACE: drop a CV.pdf file into assets/ and this link will work as-is -->
-    <p><a href="assets/CV.pdf">Download CV (PDF)</a></p>
-  </section>
+    <a class="card" href="cv.html">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="1.8"/><circle cx="9" cy="10.3" r="1.9"/><path d="M6 15c0.6-1.6 1.8-2.4 3-2.4s2.4 0.8 3 2.4"/><line x1="14.5" y1="9.3" x2="17.5" y2="9.3"/><line x1="14.5" y1="12" x2="17.5" y2="12"/></svg>
+      <h2>CV</h2>
+      <p>Résumé, PhD &amp; Master's theses</p>
+    </a>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li>Email: <a href="mailto:REPLACE@lapp.in2p3.fr">REPLACE@lapp.in2p3.fr</a></li>
-      <li>Address: LAPP, 9 Chemin de Bellevue, 74940 Annecy, France <em>(REPLACE: confirm/adjust)</em></li>
-      <li><a href="REPLACE: https://inspirehep.net/authors/YOUR_ID" target="_blank" rel="noopener">INSPIRE-HEP</a></li>
-      <li><a href="REPLACE: https://orcid.org/YOUR-ORCID-ID" target="_blank" rel="noopener">ORCID</a></li>
-      <li><a href="REPLACE: https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a></li>
-      <li><a href="https://github.com/eduardojsbarroso" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="REPLACE: https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
-    </ul>
-  </section>
+    <a class="card" href="profiles.html">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5l5-5"/><path d="M8 16.5l-1.8 1.8a3 3 0 0 1-4.2-4.2L4 12.3"/><path d="M16 7.5l1.8-1.8a3 3 0 0 1 4.2 4.2L20 11.7"/></svg>
+      <h2>Profiles</h2>
+      <p>INSPIRE-HEP, ORCID, Scholar</p>
+    </a>
 
+    <a class="card" href="contact.html">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="1.8"/><path d="M4.5 6.5l7.5 6 7.5-6"/></svg>
+      <h2>Contact</h2>
+      <p>Email and address</p>
+    </a>
+
+  </div>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <p>&copy; <span id="year"></span> Eduardo Jose Barroso</p>
-  </div>
+  <div class="wrap"><p>&copy; <span class="year"></span> Eduardo Jose Barroso</p></div>
 </footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.year').forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
 </script>
 
 </body>

@@ -3,6 +3,21 @@
 Personal academic homepage for Eduardo Jose Barroso (cosmologist, LAPP, Annecy, France).
 Plain HTML/CSS, no build step, hosted on GitHub Pages.
 
+## Structure
+
+A landing page (`index.html`) with your photo and six clickable cards, each
+linking to its own page:
+
+- `about.html` — background / who you are
+- `research.html` — research interests
+- `publications.html` — papers and preprints
+- `cv.html` — CV download, plus PhD and Master's thesis downloads
+- `profiles.html` — INSPIRE-HEP, ORCID, Google Scholar, GitHub, LinkedIn
+- `contact.html` — email and address
+
+Every page shares `assets/style.css` and a consistent top nav bar so you can
+jump between sections from anywhere, not just the home page.
+
 ## Publish it
 
 1. **(Recommended) Rename this repo** to `eduardojsbarroso.github.io` in
@@ -18,20 +33,18 @@ Plain HTML/CSS, no build step, hosted on GitHub Pages.
 
 ## Personalize the content
 
-Everything is in `index.html`. Search for the text `REPLACE` — every
-occurrence marks something to fill in:
+Search for the text `REPLACE` across all `.html` files — every occurrence
+marks something to fill in: bio text, research description, publication
+list, INSPIRE-HEP/ORCID/Scholar/LinkedIn URLs, email, and education details.
 
-- Your INSPIRE-HEP, ORCID, and Google Scholar profile URLs
-- Your LinkedIn (optional)
-- Your email
-- Your actual bio / research-interests text
-- Your real publication list (title, authors, venue, link) — add one
-  `<li>` per paper inside `#publications`
-- LAPP address, if you want it more precise
+Files to add (links already point here, so they'll work as soon as you add
+the files — no HTML changes needed):
 
-Add your photo as `assets/photo.jpg` (square works best) — the page falls
-back to a placeholder silhouette automatically if that file is missing.
-Add your CV as `assets/CV.pdf` — the "CV" section links to it directly.
+- `assets/photo.jpg` (square works best) — falls back to a placeholder
+  silhouette automatically if missing
+- `assets/CV.pdf`
+- `assets/thesis-phd.pdf`
+- `assets/thesis-msc.pdf`
 
 ## Why this helps you show up when people Google your name
 
