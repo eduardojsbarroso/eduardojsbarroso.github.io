@@ -234,6 +234,14 @@ main.page p {
   margin: 0 0 14px;
 }
 
+main.page code {
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+  font-size: 0.88em;
+  background: #f2f4f8;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
 .placeholder {
   color: #a15c00;
   background: #fff6e8;

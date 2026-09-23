@@ -33,17 +33,70 @@
   <p class="page-sub">Cosmologist · LAPP, Annecy, France</p>
 
   <section>
-    <p class="placeholder">
-      REPLACE: send me a paragraph on what you actually research — the topics
-      (e.g. dark energy, large-scale structure, weak lensing, neutrino cosmology,
-      CMB), the surveys/experiments you work with (e.g. DESI, Euclid, LSST/Rubin,
-      Planck), and the methods you use. I'll polish it into a clear paragraph
-      plus a short list of keywords below.
+    <p>
+      My research sits between observational and theoretical cosmology,
+      currently centered on galaxy clusters as cosmological probes within the
+      LSST Dark Energy Science Collaboration (DESC), alongside ongoing work on
+      primordial black hole formation in bouncing cosmologies and numerical
+      methods for cosmological inference.
     </p>
+
+    <h2>Galaxy clusters with LSST-DESC</h2>
+    <p>
+      I coordinate the galaxy cluster cosmology pipeline for LSST-DESC, which
+      turns LSST galaxy-cluster data into cosmological constraints — from
+      data-vector construction all the way to the final likelihood inference.
+      I've contributed to every stage: building cluster data-vector estimators
+      in <code>TXPipe</code>, co-developing <code>Crow</code> for weak-lensing
+      profile predictions, extending the <code>TJPCov</code> covariance
+      framework, and constructing likelihoods with <code>Firecrown</code>, all
+      now tied together in <code>CLPipeline</code>, an automated end-to-end
+      analysis framework. This built on earlier work validating the cluster
+      mass–richness scaling relation against the DESC cosmoDC2 simulations
+      (Payerne et al. 2025). I'm now leading the DESC cluster cosmology
+      analysis of the DC2 dataset — the reference analysis for LSST's upcoming
+      Data Preview 2 (DP2) — and have started calibrating known clusters
+      directly against early Rubin Observatory data.
+    </p>
+
+    <h2>Primordial black holes in bouncing cosmologies</h2>
+    <p>
+      I also study whether primordial black holes (PBHs) can form in bouncing
+      cosmologies — alternative early-Universe models where a contracting
+      phase precedes the Big Bang, avoiding the initial singularity. Because
+      perturbations evolve continuously through the bounce rather than
+      freezing outside the horizon as in inflation, the usual collapse
+      threshold used to predict PBH formation doesn't directly apply. I
+      developed a framework using exact inhomogeneous solutions to track this
+      evolving threshold, first in a dust-dominated bounce (Barroso et al.
+      2025), and now in a more realistic dust-plus-radiation bounce (Ye,
+      Demetrio, Barroso et al. 2026). Both studies find that PBHs formed
+      during the contraction phase never reach cosmologically relevant
+      abundances — a useful constraint on non-inflationary early-Universe
+      scenarios.
+    </p>
+
+    <h2>Numerical methods for cosmology</h2>
+    <p>
+      I contribute to the Numerical Cosmology Library (<code>NumCosmo</code>),
+      developing computational tools that other cosmological analyses rely
+      on: <strong>APES</strong>, an ensemble MCMC sampler that uses kernel
+      density estimation to build efficient proposal distributions (Vitenti
+      &amp; Barroso 2023), and <strong>AutoKnots</strong>, a spline
+      interpolation method that automatically places knots to cut
+      computational cost without losing precision (Vitenti, de Simoni,
+      Penna-Lima &amp; Barroso 2025).
+    </p>
+
     <ul class="keywords">
-      <li>REPLACE: keyword</li>
-      <li>REPLACE: keyword</li>
-      <li>REPLACE: keyword</li>
+      <li>Galaxy clusters</li>
+      <li>Weak lensing</li>
+      <li>LSST / Rubin Observatory</li>
+      <li>LSST-DESC</li>
+      <li>Primordial black holes</li>
+      <li>Bouncing cosmology</li>
+      <li>Numerical cosmology</li>
+      <li>MCMC methods</li>
     </ul>
   </section>
 </main>

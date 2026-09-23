@@ -20,31 +20,27 @@ jump between sections from anywhere, not just the home page.
 
 ## Publish it
 
-1. **(Recommended) Rename this repo** to `eduardojsbarroso.github.io` in
-   GitHub → Settings → General → Repository name. This gives you the clean
-   URL `https://eduardojsbarroso.github.io/` instead of
-   `https://eduardojsbarroso.github.io/personal_website/`.
-   (If you'd rather keep the current repo name, everything below still
-   works — just update the URLs in `index.html`/`robots.txt`/`sitemap.xml`
-   to include the `/personal_website/` path.)
-2. GitHub → Settings → Pages → Source: deploy from branch `main` (or
-   whichever branch holds this content), folder `/ (root)`.
+1. Repo is already at `eduardojsbarroso/eduardojsbarroso.github.io`, so the
+   URL is `https://eduardojsbarroso.github.io/`.
+2. GitHub → Settings → Pages → Source: deploy from branch `main`, folder
+   `/ (root)`.
 3. Wait a minute, then visit the URL GitHub shows you.
 
 ## Personalize the content
 
-Search for the text `REPLACE` across all `.html` files — every occurrence
-marks something to fill in: bio text, research description, publication
-list, INSPIRE-HEP/ORCID/Scholar/LinkedIn URLs, email, and education details.
+Bio, research, publications, CV, positions, and contact are filled in with
+real content already. Two things still need `REPLACE`d:
 
-Files to add (links already point here, so they'll work as soon as you add
-the files — no HTML changes needed):
+- **Google Scholar link** and **LinkedIn** (optional) — in `index.html`
+  (JSON-LD `sameAs`), `publications.html`, and `profiles.html`.
 
-- `assets/photo.jpg` (square works best) — falls back to a placeholder
-  silhouette automatically if missing
-- `assets/CV.pdf`
+Files still needed (links already point here, so they'll work as soon as
+you add the files — no HTML changes needed):
+
 - `assets/thesis-phd.pdf`
 - `assets/thesis-msc.pdf`
+
+Already in place: `assets/photo.jpg` and `assets/CV.pdf`.
 
 ## Why this helps you show up when people Google your name
 
