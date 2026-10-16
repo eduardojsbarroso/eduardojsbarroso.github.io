@@ -111,6 +111,58 @@ a { color: inherit; }
   font-size: 0.98rem;
 }
 
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px auto 0;
+  padding: 7px 16px;
+  border: 1px solid rgba(217, 164, 65, 0.35);
+  border-radius: 999px;
+  background: rgba(217, 164, 65, 0.08);
+  color: var(--gold-soft);
+  font-size: 0.84rem;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  animation: statusPulse 2.2s ease-in-out infinite;
+}
+
+/* ------------------------------------------------------------
+   Hero entrance animation
+   ------------------------------------------------------------ */
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.hero .avatar,
+.hero h1,
+.hero .tagline,
+.hero .intro,
+.hero .status-chip {
+  animation: heroFadeIn 0.7s ease both;
+}
+.hero h1 { animation-delay: 0.08s; }
+.hero .tagline { animation-delay: 0.16s; }
+.hero .intro { animation-delay: 0.24s; }
+.hero .status-chip { animation-delay: 0.32s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .avatar, .hero h1, .hero .tagline, .hero .intro, .hero .status-chip {
+    animation: none;
+  }
+  .status-dot { animation: none; }
+}
+
 /* ============================================================
    Section cards grid (home page)
    ============================================================ */
@@ -217,8 +269,21 @@ main.page {
 }
 
 main.page h1 {
+  position: relative;
   font-size: 1.7rem;
   margin: 0 0 6px;
+  padding-bottom: 14px;
+}
+
+main.page h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 46px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--gold);
 }
 
 main.page .page-sub {
@@ -228,7 +293,18 @@ main.page .page-sub {
 }
 
 main.page section {
-  margin-bottom: 36px;
+  margin-bottom: 48px;
+}
+
+.pull-quote {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: var(--text);
+  border-left: 3px solid var(--gold);
+  padding: 2px 0 2px 20px;
+  margin: 28px 0;
 }
 
 main.page h2 {
